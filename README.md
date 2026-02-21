@@ -20,7 +20,7 @@ This project automates:
 
 ## 🏗️ Architecture Workflow
 
-```text
+text
 Developer
    │
    ▼
