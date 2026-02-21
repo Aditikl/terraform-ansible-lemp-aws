@@ -106,7 +106,7 @@ This installs:
 
 📸 Project Output
 
-<img width="1918" height="877" alt="Screenshot 2026-02-21 150222" src="https://github.com/user-attachments/assets/6dec1501-f750-4381-9627-bcd55518fb66" />
+![Project Output](./project-output.png)
 
 
 
