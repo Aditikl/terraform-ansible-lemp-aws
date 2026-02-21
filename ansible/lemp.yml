@@ -1,0 +1,55 @@
+- name: Install LEMP stack on Ubuntu server
+  hosts: webserver
+  become: yes
+  tasks:
+    - name: update apt
+      shell: apt update
+    - name: Install nginx
+      apt: 
+       name: nginx
+       state: present
+    - name: start nginx
+      service:
+       name: nginx
+       state: started
+    - name: Install mysql
+      apt:
+       name: mariadb-server
+       state: present
+    - name: start mysql
+      service:
+       name: mariadb
+       state: started
+    - name: install php
+      apt:
+       name: php
+       state: present
+    - name: install php-fpm
+      apt: 
+       name: php8.3-fpm
+       state: present
+    - name: start php-fpm
+      service: 
+       name: php8.3-fpm
+       state: started
+    - name: create index page
+      copy:
+       src: ../index.html
+       dest: /var/www/html
+    - name: restart nginx
+      service: 
+       name: nginx
+       state: restarted
+    - name: restart mariadb
+      service:
+       name: mariadb
+       state: restarted
+    - name: restart php-fpm
+      service:
+       name: php8.3-fpm
+       state: restarted
+
+    - name: create index page
+      copy:
+       src: ../index.html
+       dest: /var/www/html/index.html
