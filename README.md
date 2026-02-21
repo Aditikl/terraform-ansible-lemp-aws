@@ -61,22 +61,23 @@ Website Live on Browser
 
 - Git & GitHub
 
-📂 Project Structure
-terraform-ansible-lemp-aws/
-│
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   └── outputs.tf
-│
-├── ansible/
-│   ├── lemp.yml
-│   └── inventory
-│
-├── index.html
-├── screenshots/
-│   └── project-output.png
-└── README.md
+
+
+## 📁 Project Structure
+
+📁 terraform-ansible-lemp-aws  
+├─ 📁 terraform  
+│   ├─ main.tf  
+│   ├─ variables.tf  
+│   └─ outputs.tf  
+├─ 📁 ansible  
+│   ├─ lemp.yml  
+│   └─ inventory  
+├─ 📁 screenshots  
+│   └─ project-output.png  
+├─ index.html  
+├─ .gitignore  
+└─ README.md
 
 🚀 Deployment Steps
 1️⃣ Clone Repository
